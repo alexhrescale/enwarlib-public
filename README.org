@@ -1,13 +1,22 @@
 * enwarlib: a tool to help manage env var specification
+
+  this library is compatible with python2 and python3
+
+  =python setup.py install=
   
 ** dev setup
 
-   if you have [[https://nixos.org/nix/][nix-shell]] available, clone this repository and run
-   =nix-shell=, and your dev setup should be ready to go (=pip-sync=
-   will be run automatically).
+   if you have [[https://nixos.org/nix/][nix-shell]] available, clone this
+   repository and run =nix-shell=, and your dev setup should be ready to go
+   (=pip-sync= will be run automatically). To use python2, modify default.nix
    
-   if not, follow a standard virtualenv setup. This project's
-   dependencies are managed using [[https://github.com/jazzband/pip-tools][pip-tools]]
+   if not, follow a standard virtualenv setup. This project's dependencies
+   are managed using [[https://github.com/jazzband/pip-tools][pip-tools]]
+
+** tests
+
+    once inside the nix-shell, you should be able to run tests directly using
+    =python -m unittest discover tests=
 
 ** CLI usage example
 
