@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
 
         PYTHON_VERSION=$(python -c 'import sys;print(sys.version_info.major)');
         VIRTUAL_ENV=''${VIRTUAL_ENV-venv$PYTHON_VERSION};
-        if [ ! $VIRTUAL_ENV ]; then
+        if [ -e $VIRTUAL_ENV ]; then
             echo "using existing virtualenv at $VIRTUAL_ENV..."
             source $VIRTUAL_ENV/bin/activate
         else
