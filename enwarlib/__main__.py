@@ -3,7 +3,7 @@ if __name__ == '__main__':
     import os.path as _p
     import json
     import toolz as z
-    from tidy import *
+    from .tidy import *
     import argparse
 
     def warn(s):
