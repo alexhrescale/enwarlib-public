@@ -1,6 +1,6 @@
 # enwarlib: a tool to help manage env var specification
 
-  this library is compatible with python2 and python3
+  this library is tested against python3, but python2 may also work
 
   `python setup.py install`
   
